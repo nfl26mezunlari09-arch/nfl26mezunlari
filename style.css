@@ -1,13 +1,13 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: #f5f6fa;
 }
 
-/* ÜST BÖLÜM */
+/* HERO */
 .hero {
   height: 60vh;
   background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1") center/cover;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,38 +16,45 @@ body {
 .overlay {
   background: rgba(0,0,0,0.5);
   color: white;
-  text-align: center;
   padding: 30px;
   border-radius: 10px;
+  text-align: center;
 }
 
-/* KUTULAR */
+/* KARTLAR */
 .cards {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 40px;
+  padding: 50px;
 }
 
 .card {
-  background: #f5f5f5;
-  padding: 20px;
-  width: 150px;
-  text-align: center;
-  border-radius: 10px;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
-/* ALT KISIM */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 20px;
-.section {
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* SAYFA İÇİ */
+.page {
   padding: 60px;
   text-align: center;
 }
 
-.card {
-  cursor: pointer;
+/* GERİ BUTONU */
+.back {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
