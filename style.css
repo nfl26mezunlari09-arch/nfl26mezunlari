@@ -3,11 +3,9 @@ body {
   font-family: Arial, sans-serif;
   background: #f5f6fa;
 }
-
-/* HERO */
 .hero {
   height: 60vh;
-  background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1") center/cover;
+  background: #2c3e50;
   display: flex;
   align-items: center;
   justify-content: center;
