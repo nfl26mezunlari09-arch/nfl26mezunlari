@@ -43,4 +43,11 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+.section {
+  padding: 60px;
+  text-align: center;
+}
+
+.card {
+  cursor: pointer;
 }
