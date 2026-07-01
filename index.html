@@ -3,29 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Okul Sitesi</title>
+  <title>Yıllık & Mektup</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- ÜST -->
   <header class="hero">
     <div class="overlay">
-      <h1>Okul Sitesi</h1>
-      <p>Geleceği birlikte inşa ediyoruz</p>
+      <h1>Hoş Geldin</h1>
+      <p>Geleceğe bir iz bırak</p>
     </div>
   </header>
 
+  <!-- BUTONLAR -->
   <section class="cards">
-    <div class="card">Hakkımızda</div>
-    <div class="card">Duyurular</div>
-    <div class="card">İletişim</div>
+
+    <div class="card" onclick="scrollToSection('mektup')">
+      Gelecekteki Kendine Mektup
+    </div>
+
+    <div class="card" onclick="scrollToSection('yillik')">
+      Yıllık
+    </div>
+
   </section>
 
+  <!-- MEKTUP -->
+  <section id="mektup" class="section">
+    <h2>Gelecekteki Kendine Mektup</h2>
+    <p>Buraya yazını yazabilirsin...</p>
+  </section>
+
+  <!-- YILLIK -->
+  <section id="yillik" class="section">
+    <h2>Yıllık</h2>
+    <p>Buraya yıllık içerikleri gelecek...</p>
+  </section>
+
+  <!-- ALT -->
   <footer>
-    <p>Kurucu: Senin Adın</p>
     <p>İletişim: example@mail.com</p>
   </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 
 </body>
 </html>
